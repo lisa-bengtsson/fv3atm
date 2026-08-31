@@ -6033,28 +6033,28 @@
 [lbb1]
   standard_name = tuning_parameter_for_updraft_velocity_entrainment_term
   long_name = tuning parameter for updraft velocity entrainment term
-  units = none
+  units = 1
   dimensions = ()
   type = real
   kind = kind_phys
 [lbb2]
   standard_name = tuning_parameter_for_updraft_velocity_buoyancy_term
   long_name = tuning parameter for updraft velocity buoyancy term
-  units = none
+  units = 1
   dimensions = ()
   type = real
   kind = kind_phys
 [lbb3]
   standard_name = tuning_parameter_for_updraft_velocity_shear_term
   long_name = tuning parameter for updraft velocity shear term
-  units = none
+  units = 1
   dimensions = ()
   type = real
   kind = kind_phys
 [dt_decay]
   standard_name = tuning_parameter_for_updraft_decay_time
   long_name = tuning parameter for updraft decay time
-  units = none
+  units = 1
   dimensions = ()
   type = real
   kind = kind_phys
