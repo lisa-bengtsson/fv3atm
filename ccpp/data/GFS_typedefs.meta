@@ -10743,14 +10743,6 @@
   type = real
   kind = kind_phys
   active = (flag_for_using_mixed_layer_model_in_TKE_EDMF_PBL)
-[hflux]
-  standard_name = frozen_mse_flux
-  long_name = frozen moist static energy flux from mlm scheme
-  units = K m s-1
-  dimensions = (horizontal_dimension,vertical_layer_dimension)
-  type = real
-  kind = kind_phys
-  active = (flag_for_using_mixed_layer_model_in_TKE_EDMF_PBL)
 [rflux]
   standard_name = radiative_flux
   long_name = radiative flux from mlm scheme
@@ -10762,14 +10754,6 @@
 [wflux]
   standard_name = total_water_flux
   long_name = total water flux from mlm scheme
-  units = kg kg-1 m s-1
-  dimensions = (horizontal_dimension,vertical_layer_dimension)
-  type = real
-  kind = kind_phys
-  active = (flag_for_using_mixed_layer_model_in_TKE_EDMF_PBL)
-[qflux]
-  standard_name = qt_flux
-  long_name = qt flux from mlm scheme
   units = kg kg-1 m s-1
   dimensions = (horizontal_dimension,vertical_layer_dimension)
   type = real

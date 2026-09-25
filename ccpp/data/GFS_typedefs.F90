@@ -2105,10 +2105,8 @@ module GFS_typedefs
 !+mlm
     !--- mfscuq_mlm Diagnostic variables
     real (kind=kind_phys), pointer :: eflux  (:,:)     => null()  !< total energy fluxfrom mlm closure
-    real (kind=kind_phys), pointer :: hflux  (:,:)     => null()  !< frozen mse flux from mlm closure
     real (kind=kind_phys), pointer :: rflux  (:,:)     => null()  !< radiation flux from mlm closure
     real (kind=kind_phys), pointer :: wflux  (:,:)     => null()  !< total water flux from mlm closure
-    real (kind=kind_phys), pointer :: qflux  (:,:)     => null()  !< qt flux from mlm closure
     real (kind=kind_phys), pointer :: pflux  (:,:)     => null()  !< preciptation flux from mlm closure
 !-mlm
     real (kind=kind_phys), pointer :: u10m   (:)     => null()   !< 10 meter u/v wind speed
@@ -8322,10 +8320,8 @@ module GFS_typedefs
 !+mlm
     if (Model%mlm) then
       allocate (Diag%eflux   (IM,Model%levs))
-      allocate (Diag%hflux   (IM,Model%levs))
       allocate (Diag%rflux   (IM,Model%levs))
       allocate (Diag%wflux   (IM,Model%levs))
-      allocate (Diag%qflux   (IM,Model%levs))
       allocate (Diag%pflux   (IM,Model%levs))
     endif
 !-mlm
@@ -8643,10 +8639,8 @@ module GFS_typedefs
     !+mlm
     if (Model%mlm) then
       Diag%eflux      = zero
-      Diag%hflux      = zero
       Diag%rflux      = zero
       Diag%wflux      = zero
-      Diag%qflux      = zero
       Diag%pflux      = zero
     end if
     !-mlm

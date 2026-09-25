@@ -2143,14 +2143,6 @@ module GFS_diagnostics
 
       idx = idx + 1
       ExtDiag(idx)%axes = 3
-      ExtDiag(idx)%name = 'hflux'
-      ExtDiag(idx)%desc = 'frozen moist static energy flux'
-      ExtDiag(idx)%unit = 'K m s-1'
-      ExtDiag(idx)%mod_name = 'gfs_phys'
-      ExtDiag(idx)%data%var3 => IntDiag%hflux(:,:)
-
-      idx = idx + 1
-      ExtDiag(idx)%axes = 3
       ExtDiag(idx)%name = 'rflux'
       ExtDiag(idx)%desc = 'radiative flux'
       ExtDiag(idx)%unit = 'K m s-1'
@@ -2164,14 +2156,6 @@ module GFS_diagnostics
       ExtDiag(idx)%unit = 'kg kg-1 m s-1'
       ExtDiag(idx)%mod_name = 'gfs_phys'
       ExtDiag(idx)%data%var3 => IntDiag%wflux(:,:)
-
-      idx = idx + 1
-      ExtDiag(idx)%axes = 3
-      ExtDiag(idx)%name = 'qflux'
-      ExtDiag(idx)%desc = 'qt flux'
-      ExtDiag(idx)%unit = 'kg kg-1 m s-1'
-      ExtDiag(idx)%mod_name = 'gfs_phys'
-      ExtDiag(idx)%data%var3 => IntDiag%qflux(:,:)
       
       idx = idx + 1
       ExtDiag(idx)%axes = 3
